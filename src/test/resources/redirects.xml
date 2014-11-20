@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RedirectRules xmlns="http://www.waycoolsearch.com/tutorials/search/jaxb/redirect"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.waycoolsearch.com/tutorials/search/jaxb/redirect ../schemas/redirect.xsd ">
+  <RedirectRule name="jaxb redirect">
+    <Queries>
+      <Query>jaxb</Query>
+    </Queries>
+    <Redirects>
+      <redirectURL>http://tutorials.waycoolsearch.com/java/jaxb.php</redirectURL>
+    </Redirects>
+  </RedirectRule>
+  <RedirectRule name="annotation redirect">
+    <Queries>
+      <Query>java annotation</Query>
+    </Queries>
+    <Redirects>
+      <redirectURL>http://tutorials.waycoolsearch.com/java/annotation1.php</redirectURL>
+    </Redirects>
+  </RedirectRule>
+</RedirectRules>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.waycoolsearch.com/tutorials/search/jaxb/redirect"
+	xmlns:tns="http://www.waycoolsearch.com/tutorials/search/jaxb/redirect"
+	elementFormDefault="qualified">
+
+	<element name="RedirectRules" type="tns:RedirectRulesType"></element>
+
+	<complexType name="RedirectRulesType">
+		<sequence>
+			<element name="RedirectRule" type="tns:RedirectRuleType"
+				minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+	<complexType name="RedirectRuleType">
+		<sequence>
+			<element name="Queries" type="tns:QueryType"></element>
+			<element name="Redirects" type="tns:RedirectType"></element>
+		</sequence>
+		<attribute name="name" type="string"></attribute>
+	</complexType>
+
+	<complexType name="QueryType">
+		<sequence>
+			<element name="Query" type="string" minOccurs="0" maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+	<complexType name="RedirectType">
+		<sequence>
+			<element name="redirectURL" type="string" minOccurs="1"
+				maxOccurs="unbounded"></element>
+		</sequence>
+	</complexType>
+
+
+</schema>
